@@ -1,0 +1,629 @@
+{
+  "info": {
+    "_postman_id": "54356955-b497-4d7c-93b7-5d7f8b2f8a7a",
+    "name": "MueblesLosAlpes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29131745"
+  },
+  "item": [
+    {
+      "name": "Registro/clientes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"login\": \"prueba01\",\r\n  \"contraseña\": \"clave123\",\r\n  \"tipoUsuario\": \"Cliente\",\r\n  \"nombreCompleto\": \"Usuario de Prueba\",\r\n  \"documento\": 123456789,\r\n  \"tipoDocumento\": \"CC\",\r\n  \"correo\": \"prueba01@correo.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Registro/clientes",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"login\": \"prueba01\",\r\n  \"contraseña\": \"clave123\",\r\n  \"tipoUsuario\": \"Cliente\",\r\n  \"nombreCompleto\": \"Usuario de Prueba\",\r\n  \"documento\": 123456789,\r\n  \"tipoDocumento\": \"CC\",\r\n  \"correo\": \"prueba01@correo.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                ""
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "236"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"contraseña\": \"clave123\",\n  \"correo\": \"prueba01@correo.com\",\n  \"documento\": 123456789,\n  \"login\": \"prueba01\",\n  \"nombreCompleto\": \"Usuario de Prueba\",\n  \"seleccion\": false,\n  \"telefonoCelular\": 0,\n  \"telefonoLocal\": 0,\n  \"tipoDocumento\": \"CC\",\n  \"tipoUsuario\": \"Cliente\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Cliente guardado",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Cliente guardado",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "551"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"compras\": [],\n    \"contraseña\": \"adminadmin\",\n    \"documento\": 0,\n    \"login\": \"admin\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Administrador\"\n  },\n  {\n    \"compras\": [],\n    \"contraseña\": \"clientclient\",\n    \"documento\": 0,\n    \"login\": \"client\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Cliente\"\n  },\n  {\n    \"contraseña\": \"clave123\",\n    \"correo\": \"prueba01@correo.com\",\n    \"documento\": 123456789,\n    \"login\": \"prueba01\",\n    \"nombreCompleto\": \"Usuario de Prueba\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoDocumento\": \"CC\",\n    \"tipoUsuario\": \"Cliente\"\n  }\n]"
+        },
+        {
+          "name": "Cliente guardado2",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "314"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"compras\": [],\n    \"contraseña\": \"adminadmin\",\n    \"documento\": 0,\n    \"login\": \"admin\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Administrador\"\n  },\n  {\n    \"compras\": [],\n    \"contraseña\": \"clientclient\",\n    \"documento\": 0,\n    \"login\": \"client\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Cliente\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Usuario inexistente",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/noexiste",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            "noexiste"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Usuario inexistente",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"login\": \"noexiste\",\r\n  \"contraseña\": \"Prueba123\",\r\n  \"tipoUsuario\": \"Cliente\",\r\n  \"nombreCompleto\": \"Usuario Inexistente\",\r\n  \"documento\": 987654321,\r\n  \"tipoDocumento\": \"CC\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/noexiste",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                "noexiste"
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "50"
+            }
+          ],
+          "cookie": [],
+          "body": "No se encontró el usuario que se desea actualizar"
+        }
+      ]
+    },
+    {
+      "name": "Actualizar cliente",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"login\": \"prueba01\",\r\n  \"contraseña\": \"Prueba123\",\r\n  \"tipoUsuario\": \"Cliente\",\r\n  \"nombreCompleto\": \"Usuario Actualizado\",\r\n  \"documento\": 123456789,\r\n  \"tipoDocumento\": \"CC\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/prueba01",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            "prueba01"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Actualizar cliente",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"login\": \"prueba01\",\r\n  \"contraseña\": \"clave123\",\r\n  \"tipoUsuario\": \"Cliente\",\r\n  \"nombreCompleto\": \"Usuario Actualizado\",\r\n  \"documento\": 123456789,\r\n  \"tipoDocumento\": \"CC\",\r\n  \"correo\": \"prueba01@correo.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/prueba01",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                "prueba01"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "238"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"contraseña\": \"clave123\",\n  \"correo\": \"prueba01@correo.com\",\n  \"documento\": 123456789,\n  \"login\": \"prueba01\",\n  \"nombreCompleto\": \"Usuario Actualizado\",\n  \"seleccion\": false,\n  \"telefonoCelular\": 0,\n  \"telefonoLocal\": 0,\n  \"tipoDocumento\": \"CC\",\n  \"tipoUsuario\": \"Cliente\"\n}"
+        },
+        {
+          "name": "Actualizar cliente 2",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"login\": \"prueba01\",\r\n  \"contraseña\": \"Prueba123\",\r\n  \"tipoUsuario\": \"Cliente\",\r\n  \"nombreCompleto\": \"Usuario Actualizado\",\r\n  \"documento\": 123456789,\r\n  \"tipoDocumento\": \"CC\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/prueba01",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                "prueba01"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "221"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"compras\": [],\n  \"contraseña\": \"Prueba123\",\n  \"documento\": 123456789,\n  \"login\": \"prueba01\",\n  \"nombreCompleto\": \"Usuario Actualizado\",\n  \"seleccion\": false,\n  \"telefonoCelular\": 0,\n  \"telefonoLocal\": 0,\n  \"tipoDocumento\": \"CC\",\n  \"tipoUsuario\": \"Cliente\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Consultar nuevamente clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Consultar nuevamente clientes",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "553"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"compras\": [],\n    \"contraseña\": \"adminadmin\",\n    \"documento\": 0,\n    \"login\": \"admin\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Administrador\"\n  },\n  {\n    \"compras\": [],\n    \"contraseña\": \"clientclient\",\n    \"documento\": 0,\n    \"login\": \"client\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Cliente\"\n  },\n  {\n    \"contraseña\": \"clave123\",\n    \"correo\": \"prueba01@correo.com\",\n    \"documento\": 123456789,\n    \"login\": \"prueba01\",\n    \"nombreCompleto\": \"Usuario Actualizado\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoDocumento\": \"CC\",\n    \"tipoUsuario\": \"Cliente\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Prueba eliminar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/prueba01",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            "prueba01"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Prueba eliminar",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/prueba01",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                "prueba01"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": "text",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            }
+          ],
+          "cookie": [],
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "Verificar eliminado",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "MueblesLosAlpes-war",
+            "webresources",
+            "Registro",
+            "clientes",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Verificar eliminado",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/MueblesLosAlpes-war/webresources/Registro/clientes/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "MueblesLosAlpes-war",
+                "webresources",
+                "Registro",
+                "clientes",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Eclipse GlassFish 7.1.1"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "314"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"compras\": [],\n    \"contraseña\": \"adminadmin\",\n    \"documento\": 0,\n    \"login\": \"admin\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Administrador\"\n  },\n  {\n    \"compras\": [],\n    \"contraseña\": \"clientclient\",\n    \"documento\": 0,\n    \"login\": \"client\",\n    \"seleccion\": false,\n    \"telefonoCelular\": 0,\n    \"telefonoLocal\": 0,\n    \"tipoUsuario\": \"Cliente\"\n  }\n]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Archivos compilados y generados
+build/
+dist/
+**/build/
+**/dist/
+*.class
+*.jar
+*.war
+*.ear
+
+# Configuración privada de NetBeans
+**/nbproject/private/
+nbproject/private/
+
+# Archivos temporales del IDE
+**/.netbeans_automatic_build
+**/.netbeans_update_resources
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
